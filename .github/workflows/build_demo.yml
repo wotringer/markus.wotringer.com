@@ -18,6 +18,7 @@ jobs:
 
       - name: Build the site
         run: |
+          cd site
           deno task build --location=https://wotringer.github.io/
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v2.0.1
